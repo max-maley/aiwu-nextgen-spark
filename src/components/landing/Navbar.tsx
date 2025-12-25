@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import AiwuLogo from "@/components/ui/AiwuLogo";
 
 const navLinks = [
   { label: "Features", href: "#features" },
@@ -20,9 +21,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-glow-sm group-hover:shadow-glow transition-shadow">
-                <Zap className="w-5 h-5 text-primary-foreground" />
-              </div>
+              <AiwuLogo size="sm" />
               <span className="font-display font-bold text-xl">AIWU</span>
             </a>
             
